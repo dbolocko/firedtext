@@ -1,0 +1,56 @@
+<html>
+    <head>
+        <title>ungelesene Briefe schwelen ohne Antwort</title>
+    <script>
+    function delete_()
+    {
+        document.getElementById("mtxt").value = "";
+        document.getElementById("rel1").style.display = "contents"
+    }
+    </script>
+    <style>
+        #abs1 {
+  z-index: 3;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+#rel1 {
+  z-index: 5;
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+img{margin-left: auto;margin-right: auto;}
+    </style>
+    </head>
+    
+    <body>
+        <div id="abs1">
+            <table width="100%" height="100%">
+                      <tr width="100%" height="100%">
+                          <td width="100%" height="100%">
+                              <center>
+                                  <textarea cols="50" rows="25" id="mtxt" title="пиши всё, что хочешь. это может быть одноразовый список дел или всё, о чём хочешь высказаться, но не можешь или некому. написать и забыть. или отпустить. в прочем, дело твоё, %USERNAME%. мы тебя ни в чём не ограничиваем, разве что во вставке картинок, но зачем это тут?.. незачем. мы пришли исключительно за ТЕКСТОВОЙ информацией, а в прочем, не важно, пиши, пиши, времени не теряй.">
+                                      write down everything you want to say. and burn it. and forget it.
+                                  </textarea>
+                                  <br>
+                                  <img title="fire it. burn it. forget it." width="40" height="40" onclick="delete_()"src="https://icones.pro/wp-content/uploads/2021/05/symbole-de-feu-rouge.png">
+                              </center>
+                          </td>
+                          
+                      </tr>
+                  </table>
+          </div>
+          
+          <div id="rel1">
+              <center>
+           <img id="fire" src="https://acegif.com/wp-content/gifs/fire-65.gif">
+           </center>
+          </div>
+          <script>
+              document.getElementById("rel1").style.display = "none"
+          </script>
+    </body>
+</html>
